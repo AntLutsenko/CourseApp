@@ -1,0 +1,61 @@
+
+
+.courses-list{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-area: content;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 20px 24px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.course{
+    display: grid;
+    grid-template-rows: 200px 1fr 40px;
+    border-radius:15px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    &__img{
+        width: 100%;
+    }
+    &__header{
+        background-color: #20232a;
+        display: grid;
+        grid-template-columns: 144px 1fr;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 12px;
+        color: #fff;
+        word-wrap: break-word;
+        background-color: #20232a;
+        border-radius: 15px 15px 0 0;
+        font-weight: 500;
+        box-sizing: border-box;
+        text-align: center;
+        &--title{
+            font-size: 24px;
+            word-wrap: break-word;
+        }
+    }
+    &__main{
+        box-sizing: border-box;
+        padding: 24px 18px 32px;
+        &--description{
+            padding: 10px 0 10px;
+        }
+        &--lesson-count{
+            padding: 10px 0 10px;
+        }
+        &--skills-list{
+            padding: 10px 0 10px;
+        }
+        &--skills-item{
+            padding: 5px 0 5px;
+            
+        }
+    }
+}
+
